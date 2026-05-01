@@ -22,6 +22,8 @@ const _TabLayout = () => {
           borderRadius: 50,
           backgroundColor: "#0f0D23",
           height: 50,
+          borderWidth: 1,
+          borderColor: "#030013",
         },
       }}
     >
