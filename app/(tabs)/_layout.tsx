@@ -15,6 +15,14 @@ const _TabLayout = () => {
           justifyContent: "center",
           alignItems: "center",
         },
+        tabBarStyle: {
+          position: "absolute",
+          marginBottom: 36,
+          marginHorizontal: 20,
+          borderRadius: 50,
+          backgroundColor: "#0f0D23",
+          height: 50,
+        },
       }}
     >
       <Tabs.Screen
