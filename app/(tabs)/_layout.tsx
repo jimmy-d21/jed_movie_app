@@ -15,24 +15,16 @@ const _TabLayout = () => {
           justifyContent: "center",
           alignItems: "center",
         },
-        tabBarStyle: {
-          backgroundColor: "#0f0D23",
-          position: "absolute",
-          marginBottom: 20,
-          marginHorizontal: 20,
-          borderRadius: 50,
-        },
       }}
     >
       <Tabs.Screen
         name="index"
         options={{
-          headerShown: false,
           tabBarIcon: ({ focused }) => (
             <TabIcon
               bgImage={images.highlight}
+              title="Home"
               icon={icons.home}
-              title={"Home"}
               focused={focused}
             />
           ),
@@ -44,8 +36,8 @@ const _TabLayout = () => {
           tabBarIcon: ({ focused }) => (
             <TabIcon
               bgImage={images.highlight}
-              icon={icons.search}
               title="Search"
+              icon={icons.search}
               focused={focused}
             />
           ),
@@ -57,8 +49,8 @@ const _TabLayout = () => {
           tabBarIcon: ({ focused }) => (
             <TabIcon
               bgImage={images.highlight}
-              icon={icons.save}
               title="Saved"
+              icon={icons.save}
               focused={focused}
             />
           ),
@@ -70,8 +62,8 @@ const _TabLayout = () => {
           tabBarIcon: ({ focused }) => (
             <TabIcon
               bgImage={images.highlight}
-              icon={icons.person}
               title="Profile"
+              icon={icons.person}
               focused={focused}
             />
           ),
