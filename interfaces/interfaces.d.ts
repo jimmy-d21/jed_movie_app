@@ -17,4 +17,7 @@ interface Movie {
 
 interface SearchBarProps {
   onPress?: () => void;
+  onChangeText?: (text: string) => void;
+  value?: string;
+  placeholder?: string;
 }

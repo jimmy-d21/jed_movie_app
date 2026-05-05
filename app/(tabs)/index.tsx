@@ -1,5 +1,4 @@
 import MovieCard from "@/components/MovieCard";
-import SearchBar from "@/components/SearchBar";
 import { icons } from "@/constants/icons";
 import { images } from "@/constants/images";
 import { fetchMovies } from "@/services/api";
@@ -32,8 +31,7 @@ export default function Home() {
   const renderHeader = () => {
     return (
       <View className="px-5">
-        <Image source={icons.logo} className="w-12 h-10 mx-auto mt-20 mb-5" />
-        <SearchBar onPress={() => router.push("/search")} />
+        <Image source={icons.logo} className="w-12 h-10 mx-auto mt-20 mb-10" />
         <Text className="text-white font-bold text-xl mb-5">
           Popular Movies
         </Text>

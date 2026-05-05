@@ -46,6 +46,7 @@ const useFetch = <T>(
       setLoading(false);
     }
   }, [fetchFunction]);
+
   useEffect(() => {
     if (autoFetch) {
       fetchData({ query: "" });
