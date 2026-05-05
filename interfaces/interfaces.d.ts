@@ -69,3 +69,13 @@ interface MovieDetails {
   vote_average: number;
   vote_count: number;
 }
+
+interface MovieInfoProps {
+  label: string;
+  value?: string | number | null;
+}
+interface MovieDetailsModalProps {
+  visible: boolean;
+  onClose: () => void;
+  movieData: any;
+}
